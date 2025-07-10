@@ -18,7 +18,7 @@
         scenes: {
           scene1: {
             type: 'equirectangular',
-            panorama: 'EXP_Marketing.jpg',
+            panorama: '1EXP_Marketing.jpg',
             autoLoad: true,
             hotSpots: [
               {
@@ -52,7 +52,7 @@
 
           scene2: {
             type: 'equirectangular',
-            panorama: 'EXP_PrintOrder.jpg',
+            panorama: '2EXP_PrintOrder.jpg',
             autoLoad: true,
             hotSpots: [
               {
@@ -90,7 +90,36 @@
 
           scene3: {
             type: 'equirectangular',
-            panorama: 'EXP_VR.jpg',  // scene3 이미지 파일명
+            panorama: '3EXP_VR.jpg',  // scene3 이미지 파일명
+            autoLoad: true,
+            hotSpots: [
+              {
+                pitch: 5,
+                yaw: -120,
+                type: 'scene',
+                text: '이전 공간으로 이동',
+                sceneId: 'scene2'
+              },
+              {
+                pitch: 15,
+                yaw: -120,
+                type: 'scene',
+                text: 'Hallway1으로 이동',
+                sceneId: 'scene5'
+              },
+              {
+                pitch: 25,
+                yaw: -120,
+                type: 'scene',
+                text: 'Entrance으로 이동',
+                sceneId: 'scene6'
+              }
+            ]
+          },
+
+          scene4: {
+            type: 'equirectangular',
+            panorama: '4EXP_Lobby.jpg',  // scene4 이미지 파일명
             autoLoad: true,
             hotSpots: [
               {
@@ -103,9 +132,9 @@
             ]
           },
 
-          scene4: {
+          scene5: {
             type: 'equirectangular',
-            panorama: 'EXP_Lobby.jpg',  // scene4 이미지 파일명
+            panorama: '5EXP_Hallway1.jpg',  // scene5 이미지 파일명
             autoLoad: true,
             hotSpots: [
               {
@@ -114,10 +143,38 @@
                 type: 'scene',
                 text: '이전 공간으로 이동',
                 sceneId: 'scene2'
+              },
+              {
+                pitch: -4,
+                yaw: 7,
+                type: 'info',
+                text: 'This is a Storage',
+                URL: 'https://raw.githubusercontent.com/jjosmlnd/PannellumTest_0709_1/main/images/Storage.jpg'
+              }
+            ]
+          },
+
+          scene6: {
+            type: 'equirectangular',
+            panorama: '6EXP_Entrance.jpg',  // scene6 이미지 파일명
+            autoLoad: true,
+            hotSpots: [
+              {
+                pitch: 5,
+                yaw: -120,
+                type: 'scene',
+                text: '이전 공간으로 이동',
+                sceneId: 'scene2'
+              },
+              {
+                pitch: -4,
+                yaw: 7,
+                type: 'info',
+                text: 'This is a Storage',
+                URL: 'https://raw.githubusercontent.com/jjosmlnd/PannellumTest_0709_1/main/images/Storage.jpg'
               }
             ]
           }
-
         }
       });
     </script>
