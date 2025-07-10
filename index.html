@@ -49,17 +49,40 @@
               }
             ]
           },
+
           scene2: {
             type: 'equirectangular',
             panorama: 'EXP_PrintOrder.jpg',
             autoLoad: true,
             hotSpots: [
               {
-                pitch: -3,         // 원하는 위치 값
-                yaw: -166,           // 원하는 위치 값
+                pitch: -1,
+                yaw: -88,
+                type: 'scene',
+                text: '다음 공간으로 이동',
+                sceneId: 'scene3'
+              },
+              {
+                pitch: -2,
+                yaw: -14,
                 type: 'scene',
                 text: '이전 공간으로 이동',
                 sceneId: 'scene1'
+              }
+            ]
+          },
+
+          scene3: {
+            type: 'equirectangular',
+            panorama: 'EXP_VR.jpg',  // scene3 이미지 파일명
+            autoLoad: true,
+            hotSpots: [
+              {
+                pitch: 5,
+                yaw: -120,
+                type: 'scene',
+                text: '이전 공간으로 이동',
+                sceneId: 'scene2'
               }
             ]
           }
