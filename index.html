@@ -19,7 +19,7 @@
           scene1: {
             type: 'equirectangular',
             panorama: '1EXP_Marketing.jpg',
-            autoLoad: true,
+            autoLoad: true, 
             hotSpots: [
               {
                 pitch: 4,
@@ -44,7 +44,7 @@
                 pitch: -3,
                 yaw: -161,
                 type: 'scene',
-                text: 'PrintOrder으로 이동',
+                text: 'go to Printer',
                 sceneId: 'scene2'
               }
             ]
@@ -52,28 +52,28 @@
 
           scene2: {
             type: 'equirectangular',
-            panorama: '2EXP_PrintOrder.jpg',
+            panorama: '2EXP_Printer.jpg',
             autoLoad: true,
             hotSpots: [
               {
                 pitch: 2,
                 yaw: -90,
                 type: 'scene',
-                text: 'VR으로 이동',
+                text: 'go to Billing',
                 sceneId: 'scene3'
               },
               {
                 pitch: -4,
                 yaw: -25,
                 type: 'scene',
-                text: 'Marketing으로 이동',
+                text: 'go to Marketing',
                 sceneId: 'scene1'
               },
               {
                 pitch: -8,
                 yaw: -108,
                 type: 'scene',
-                text: 'Lobby으로 이동',
+                text: 'go to Lobby',
                 sceneId: 'scene4'
               },
 
@@ -90,49 +90,52 @@
 
           scene3: {
             type: 'equirectangular',
-            panorama: '3EXP_VR.jpg',  // scene3 이미지 파일명
+            panorama: '3EXP_Billing.jpg',  // scene3 이미지 파일명
             autoLoad: true,
+            yaw: -138,       
+            pitch: -4,    
+            hfov: 80,
             hotSpots: [
               {
                 pitch: 5,
                 yaw: -120,
                 type: 'scene',
-                text: '이전 공간으로 이동',
+                text: 'go to Printer',
                 sceneId: 'scene2'
               },
               {
                 pitch: 15,
                 yaw: -120,
                 type: 'scene',
-                text: 'Hallway1으로 이동',
+                text: 'go to Hallway1',
                 sceneId: 'scene5'
               },
               {
                 pitch: 25,
                 yaw: -120,
                 type: 'scene',
-                text: 'Entrance으로 이동',
+                text: 'go to Entrance',
                 sceneId: 'scene6'
               },
               {
                 pitch: -5,
                 yaw: -120,
                 type: 'scene',
-                text: '2ndFloor_1으로 이동',
+                text: 'go to 2ndFloor_1',
                 sceneId: 'scene7'
               },
               {
                 pitch: -15,
                 yaw: -120,
                 type: 'scene',
-                text: '2ndFloor_2으로 이동',
+                text: 'go to 2ndFloor_2',
                 sceneId: 'scene8'
               },
               {
                 pitch: -25,
                 yaw: -120,
                 type: 'scene',
-                text: '2ndFloor_3으로 이동',
+                text: 'go to IT',
                 sceneId: 'scene9'
               }
             ]
@@ -229,7 +232,7 @@
 
           scene9: {
             type: 'equirectangular',
-            panorama: '9EXP_2ndFloor_3.jpg',  // scene9 이미지 파일명
+            panorama: '9EXP_IT.jpg',  // scene9 이미지 파일명
             autoLoad: true,
             hotSpots: [
               {
