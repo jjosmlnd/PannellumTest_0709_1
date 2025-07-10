@@ -127,6 +127,13 @@
                 type: 'scene',
                 text: '2ndFloor_2으로 이동',
                 sceneId: 'scene8'
+              },
+              {
+                pitch: -25,
+                yaw: -120,
+                type: 'scene',
+                text: '2ndFloor_3으로 이동',
+                sceneId: 'scene9'
               }
             ]
           },
@@ -208,6 +215,21 @@
           scene8: {
             type: 'equirectangular',
             panorama: '8EXP_2ndFloor_2.jpg',  // scene8 이미지 파일명
+            autoLoad: true,
+            hotSpots: [
+              {
+                pitch: 5,
+                yaw: -120,
+                type: 'scene',
+                text: '이전 공간으로 이동',
+                sceneId: 'scene2'
+              }
+            ]
+          },
+
+          scene9: {
+            type: 'equirectangular',
+            panorama: '9EXP_2ndFloor_3.jpg',  // scene9 이미지 파일명
             autoLoad: true,
             hotSpots: [
               {
