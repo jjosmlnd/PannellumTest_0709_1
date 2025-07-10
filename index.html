@@ -113,6 +113,20 @@
                 type: 'scene',
                 text: 'Entrance으로 이동',
                 sceneId: 'scene6'
+              },
+              {
+                pitch: -5,
+                yaw: -120,
+                type: 'scene',
+                text: '2ndFloor_1으로 이동',
+                sceneId: 'scene7'
+              },
+              {
+                pitch: -15,
+                yaw: -120,
+                type: 'scene',
+                text: '2ndFloor_2으로 이동',
+                sceneId: 'scene8'
               }
             ]
           },
@@ -174,7 +188,36 @@
                 URL: 'https://raw.githubusercontent.com/jjosmlnd/PannellumTest_0709_1/main/images/Storage.jpg'
               }
             ]
+          },
+
+          scene7: {
+            type: 'equirectangular',
+            panorama: '7EXP_2ndFloor_1.jpg',  // scene7 이미지 파일명
+            autoLoad: true,
+            hotSpots: [
+              {
+                pitch: 5,
+                yaw: -120,
+                type: 'scene',
+                text: '이전 공간으로 이동',
+                sceneId: 'scene2'
+              },
+
+          scene8: {
+            type: 'equirectangular',
+            panorama: '8EXP_2ndFloor_2.jpgg',  // scene8 이미지 파일명
+            autoLoad: true,
+            hotSpots: [
+              {
+                pitch: 5,
+                yaw: -120,
+                type: 'scene',
+                text: '이전 공간으로 이동',
+                sceneId: 'scene2'
+              }
+            ]
           }
+
         }
       });
     </script>
