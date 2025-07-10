@@ -69,6 +69,14 @@
                 text: 'Marketing으로 이동',
                 sceneId: 'scene1'
               },
+              {
+                pitch: -8,
+                yaw: -108,
+                type: 'scene',
+                text: 'Lobby으로 이동',
+                sceneId: 'scene4'
+              },
+
               // 여기 info 타입 핫스팟 추가
               {
                 pitch: -4,
@@ -93,7 +101,23 @@
                 sceneId: 'scene2'
               }
             ]
+          },
+
+          scene4: {
+            type: 'equirectangular',
+            panorama: 'EXP_Lobby.jpg',  // scene4 이미지 파일명
+            autoLoad: true,
+            hotSpots: [
+              {
+                pitch: 5,
+                yaw: -120,
+                type: 'scene',
+                text: '이전 공간으로 이동',
+                sceneId: 'scene2'
+              }
+            ]
           }
+
         }
       });
     </script>
