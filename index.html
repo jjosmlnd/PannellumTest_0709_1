@@ -29,13 +29,13 @@
                 URL: 'images/cat.jpg'
               },
               {
-                pitch: 3,
+                pitch: -7,
                 yaw: 69,
                 type: 'info',
                 text: 'Computer.'
               },
               {
-                pitch: -13,
+                pitch: -7,
                 yaw: -134,
                 type: 'info',
                 text: '프린터입니다.'
@@ -56,7 +56,7 @@
             autoLoad: true,
             hotSpots: [
               {
-                pitch: 2,
+                pitch: -4,
                 yaw: -90,
                 type: 'scene',
                 text: 'go to Billing',
@@ -76,14 +76,25 @@
                 text: 'go to Lobby',
                 sceneId: 'scene4'
               },
-
-              // 여기 info 타입 핫스팟 추가
+              {
+                pitch: 5,
+                yaw: 87,
+                type: 'scene',
+                text: 'go to Entrance',
+                sceneId: 'scene6'
+              },
               {
                 pitch: -4,
                 yaw: 7,
                 type: 'info',
                 text: 'There is a Printer',
                 URL: 'https://raw.githubusercontent.com/jjosmlnd/PannellumTest_0709_1/main/images/Printer.jpg'
+              },
+              {
+                pitch: 0,
+                yaw: 160,
+                type: 'info',
+                text: 'Call Center'
               }
             ]
           },
@@ -97,7 +108,7 @@
             hfov: 80,
             hotSpots: [
               {
-                pitch: 5,
+                pitch: 0,
                 yaw: -120,
                 type: 'scene',
                 text: 'go to Printer',
@@ -137,6 +148,12 @@
                 type: 'scene',
                 text: 'go to IT',
                 sceneId: 'scene9'
+              },
+              {
+                pitch: 0,
+                yaw: -170,
+                type: 'info',
+                text: 'Billing Team'
               }
             ]
           },
@@ -147,11 +164,31 @@
             autoLoad: true,
             hotSpots: [
               {
-                pitch: 5,
-                yaw: -120,
+                pitch: 17,
+                yaw: -42,
                 type: 'scene',
-                text: '이전 공간으로 이동',
+                text: 'go to Printer',
                 sceneId: 'scene2'
+              },
+              {
+                pitch: 17,
+                yaw: -148,
+                type: 'scene',
+                text: 'go to Billing',
+                sceneId: 'scene3'
+              },
+              {
+                pitch: -16,
+                yaw: 20,
+                type: 'scene',
+                text: 'go to Hallway1',
+                sceneId: 'scene5'
+              },
+              {
+                pitch: -11,
+                yaw: -10,
+                type: 'info',
+                text: 'Call Center'
               }
             ]
           },
@@ -162,15 +199,29 @@
             autoLoad: true,
             hotSpots: [
               {
-                pitch: 5,
-                yaw: -120,
+                pitch: 1,
+                yaw: 8,
                 type: 'scene',
-                text: '이전 공간으로 이동',
-                sceneId: 'scene2'
+                text: 'go to Lobby',
+                sceneId: 'scene4'
               },
               {
-                pitch: -4,
-                yaw: 7,
+                pitch: -17,
+                yaw: 116,
+                type: 'scene',
+                text: 'go to Entrance',
+                sceneId: 'scene6'
+              },
+              {
+                pitch: -9,
+                yaw: -175,
+                type: 'scene',
+                text: 'go to IT Team',
+                sceneId: 'scene9'
+              },
+              {
+                pitch: 0,
+                yaw: 110,
                 type: 'info',
                 text: 'This is a Storage',
                 URL: 'https://raw.githubusercontent.com/jjosmlnd/PannellumTest_0709_1/main/images/Storage.jpg'
@@ -184,18 +235,37 @@
             autoLoad: true,
             hotSpots: [
               {
-                pitch: 5,
-                yaw: -120,
+                pitch: -23,
+                yaw: 152,
                 type: 'scene',
-                text: '이전 공간으로 이동',
+                text: 'go to Printer',
                 sceneId: 'scene2'
               },
               {
-                pitch: -4,
-                yaw: 7,
+                pitch: -10,
+                yaw: 144,
+                type: 'scene',
+                text: 'go to Hallway1',
+                sceneId: 'scene5'
+              },
+              {
+                pitch: 1,
+                yaw: 143,
                 type: 'info',
                 text: 'This is a Storage',
                 URL: 'https://raw.githubusercontent.com/jjosmlnd/PannellumTest_0709_1/main/images/Storage.jpg'
+              },
+              {
+                pitch: -4,
+                yaw: -7,
+                type: 'info',
+                text: 'Exit',
+              },
+              {
+                pitch: -13,
+                yaw: -120,
+                type: 'info',
+                text: 'Break Room',
               }
             ]
           },
