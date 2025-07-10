@@ -1,16 +1,69 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css">
+    <meta charset="utf-8" />
+    <title>Pannellum Viewer Example</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css" />
   </head>
   <body>
     <div id="panorama" style="width: 1920px; height: 1080px;"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
     <script>
-      pannellum.viewer('panorama', {
-        "type": "equirectangular",
-        "panorama": "EXP_Marketing.jpg"
+      window.viewer = pannellum.viewer('panorama', {
+        default: {
+          firstScene: 'scene1',
+          sceneFadeDuration: 1000
+        },
+        scenes: {
+          scene1: {
+            type: 'equirectangular',
+            panorama: 'EXP_Marketing.jpg',
+            autoLoad: true,
+            hotSpots: [
+              {
+                pitch: 4,
+                yaw: -79,
+                type: 'info',
+                text: '티비',
+                URL: 'images/cat.jpg'
+              },
+              {
+                pitch: -33,
+                yaw: -53,
+                type: 'info',
+                text: '팀장님입니다.'
+              },
+              {
+                pitch: 7,
+                yaw: 104,
+                type: 'info',
+                text: '프린터입니다.'
+              },
+              {
+                pitch: 3,
+                yaw: 69,
+                type: 'scene',
+                text: '다른 공간으로 이동',
+                sceneId: 'scene2'
+              }
+            ]
+          },
+          scene2: {
+            type: 'equirectangular',
+            panorama: 'EXP_PrintOrder.jpg',
+            autoLoad: true,
+            hotSpots: [
+              {
+                pitch: -3,         // 원하는 위치 값
+                yaw: -166,           // 원하는 위치 값
+                type: 'scene',
+                text: '이전 공간으로 이동',
+                sceneId: 'scene1'
+              }
+            ]
+          }
+        }
       });
     </script>
   </body>
